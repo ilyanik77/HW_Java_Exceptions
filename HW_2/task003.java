@@ -19,7 +19,12 @@ public class task003 {
         }
     }
 
-    public static void printSum(Integer a, Integer b) throws FileNotFoundException {
-        System.out.println(a + b);
+    public static void printSum(Integer a, Integer b) {
+        try {
+            System.out.println(a + b);
+        } catch (RuntimeException ex) {
+            System.out.println("Что-то пошло не так...");
+        }
+
     }
 }
