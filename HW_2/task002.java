@@ -14,8 +14,9 @@ public class task002 {
             System.out.println("catchedRes1 = " + catchedRes1);
         } catch (ArithmeticException e) {
             System.out.println("Catching exception: " + e);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Catching exception: " + e);
         }
-
     }
 
 
